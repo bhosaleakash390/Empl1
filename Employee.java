@@ -1,25 +1,28 @@
-public class Eployee{
-    Sring name;
+public class Employee {
+    String name;
     int id;
     double salary;
+    String address;
+    
 
-    public Employee(Sting name, int id, double salary){
-
-        this.name= name;
-        this.id =id;
+    public Employee(String name, int id, double salary) {
+        this.name = name;
+        this.id = id;
         this.salary = salary;
-
-    }
-    public void displayInfo(){
-        system.out.println("Employee ID: "+ id);
-        system.out.println("Employee name:" + name);
-        system.out.println("Employee system:" + salary);
-
+        this.address = address;
+      
     }
 
-    public static void main(string[] args){
-        Employee emp1 = new Employee(name:"xyz", id:101, salary:50000.0);
+    public void displayInfo() {
+        System.out.println("Employee ID: " + id);
+        System.out.println("Employee Name: " + name);
+        System.out.println("Employee Salary: " + salary);
+        System.out.println("Employee address: " + address);
+        
+    }
+
+    public static void main(String[] args) {
+        Employee emp1 = new Employee("xyz", 101, 50000,"hubli");
         emp1.displayInfo();
     }
-    }
-
+}
